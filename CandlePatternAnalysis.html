@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>코인선물 롱포지션 5연속양봉 패턴 검출</title>
+    <title>코인선물 5연속음봉 패턴 검출</title>
     <!-- Bootstrap CSS 추가 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome CSS 추가 -->
@@ -33,7 +33,7 @@
         }
         
         .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
             color: white;
             padding: 25px 20px;
             text-align: center;
@@ -81,7 +81,7 @@
         
         .stats-container {
             padding: 20px 15px;
-            background-color: #f8f9ff;
+            background-color: #fff5f5;
         }
         
         .stats-grid {
@@ -97,13 +97,13 @@
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             text-align: center;
-            border-left: 4px solid #667eea;
+            border-left: 4px solid #e74c3c;
         }
         
         .stat-number {
             font-size: 2.2em;
             font-weight: bold;
-            color: #667eea;
+            color: #e74c3c;
             margin-bottom: 8px;
             line-height: 1.2;
         }
@@ -143,7 +143,7 @@
             color: #333;
             margin-bottom: 20px;
             padding-bottom: 12px;
-            border-bottom: 3px solid #667eea;
+            border-bottom: 3px solid #e74c3c;
             line-height: 1.4;
         }
         
@@ -168,7 +168,7 @@
         }
         
         th {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
             color: white;
             padding: 16px 10px;
             text-align: center;
@@ -185,24 +185,24 @@
         }
         
         tr:hover {
-            background-color: #f8f9ff;
+            background-color: #fff5f5;
         }
         
         .optimal-row {
-            background-color: #fff8e1;
+            background-color: #ffe8e8;
         }
         
         .optimal-row:hover {
-            background-color: #fff3c4;
+            background-color: #ffd4d4;
         }
         
         .symbol-cell {
             font-weight: bold;
-            color: #667eea;
+            color: #e74c3c;
         }
         
         .symbol-link {
-            color: #667eea;
+            color: #e74c3c;
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s ease;
@@ -214,9 +214,9 @@
         }
         
         .symbol-link:hover {
-            color: #4a90e2;
+            color: #c0392b;
             text-decoration: underline;
-            background-color: rgba(102, 126, 234, 0.1);
+            background-color: rgba(231, 76, 60, 0.1);
             border-radius: 6px;
         }
         
@@ -240,8 +240,8 @@
         }
         
         .note {
-            background-color: #e8f4fd;
-            border-left: 4px solid #2196f3;
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
             padding: 18px;
             margin: 20px 0;
             border-radius: 8px;
@@ -249,7 +249,7 @@
         
         .note-title {
             font-weight: bold;
-            color: #1976d2;
+            color: #856404;
             margin-bottom: 10px;
             font-size: 1.05em;
         }
@@ -389,8 +389,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📊 코인선물 롱포지션 5연속양봉 패턴 검출</h1>
-            <p>분석 시간: 2025-12-30 12:26:34</p>
+            <h1>📊 코인선물 5연속음봉 패턴 검출</h1>
+            <p>분석 시간: 2025-12-30 13:03:01</p>
             <p>USD/KRW 환율: 1434.69원</p>
         </div>
 
@@ -403,7 +403,7 @@
                     <i class="fas fa-globe"></i> 코인선물 시장 현황
                 </a>
                 <a href="AI_Choice.html" class="btn btn-success btn-lg">
-                    <i class="fas fa-robot"></i> 코인선물 AI 롱포지션 종목 분석
+                    <i class="fas fa-robot"></i> 코인선물 AI 종목 분석
                 </a>
             </div>
         </div>
@@ -415,11 +415,11 @@
                     <div class="stat-label">전체 패턴 발견</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">3</div>
+                    <div class="stat-number">4</div>
                     <div class="stat-label">⭐ 최적 조건<br>(하락 후 패턴)</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">2</div>
+                    <div class="stat-number">1</div>
                     <div class="stat-label">일반 조건<br>(기타)</div>
                 </div>
             </div>
@@ -429,18 +429,18 @@
                 <ul>
                     <li><strong>분석 기준:</strong> 12개 15분봉</li>
                     <li><strong>추세 분석:</strong> 처음 7개 캔들로 상승/하락 추세 파악</li>
-                    <li><strong>패턴 분석:</strong> 다음 5개 캔들에서 양봉 5연속 검출</li>
-                    <li><strong>⭐ 최적 조건:</strong> 하락 추세 후 5연속 양봉 패턴<br>(하락 후 강한 반등 신호)</li>
-                    <li><strong>우선순위:</strong> 하락율이 높을수록 우선 (반등 여력 큼)</li>
+                    <li><strong>패턴 분석:</strong> 다음 5개 캔들에서 음봉 5연속 검출</li>
+                    <li><strong>⭐ 최적 조건:</strong> 하락 추세 후 5연속 음봉 패턴<br>(지속적인 하락 신호)</li>
+                    <li><strong>우선순위:</strong> 하락율이 높을수록 우선 (하락 추세 강함)</li>
                 </ul>
             </div>
         </div>
         <div class="table-container">
-            <h2 class="section-title">⭐ 최적 조건: 하락 추세 후 5연속 양봉 (3개)</h2>
+            <h2 class="section-title">⭐ 최적 조건: 하락 추세 후 5연속 음봉 (4개)</h2>
             <div class="note">
-                <div class="note-title">💡 투자 포인트</div>
-                <p>하락 추세 후 5연속 양봉이 나타난 종목들로, 강력한 상승 전환 가능성이 높습니다.</p>
-                <p>하락율이 높을수록 반등 여력이 크므로 우선순위가 높습니다.</p>
+                <div class="note-title">⚠️ 투자 포인트</div>
+                <p>하락 추세 후 5연속 음봉이 나타난 종목들로, 지속적인 하락 추세를 보이고 있습니다.</p>
+                <p>하락율이 높을수록 하락 추세가 강하므로 주의가 필요합니다.</p>
             </div>
             <div class="table-wrapper">
                 <table>
@@ -463,52 +463,66 @@
                     <tbody>
                         <tr class="optimal-row">
                             <td>1</td>
-                            <td class="symbol-cell"><a href="https://www.binance.com/en/futures/KERNELUSDT" target="_blank" class="symbol-link">KERNELUSDT</a></td>
-                            <td>0.074110</td>
+                            <td class="symbol-cell"><a href="https://www.binance.com/en/futures/LYNUSDT" target="_blank" class="symbol-link">LYNUSDT</a></td>
+                            <td>0.092680</td>
                             <td class="negative">하락</td>
-                            <td class="negative">-2.40%</td>
-                            <td class="positive">0.14%</td>
-                            <td class="positive">0.30%</td>
-                            <td class="positive">0.01%</td>
-                            <td class="positive">0.05%</td>
-                            <td class="positive">1.24%</td>
-                            <td class="positive">1.75%</td>
-                            <td>₩8,312,372,368</td>
+                            <td class="negative">-8.79%</td>
+                            <td class="negative">-4.21%</td>
+                            <td class="negative">-10.95%</td>
+                            <td class="negative">-8.90%</td>
+                            <td class="negative">-7.03%</td>
+                            <td class="negative">-2.26%</td>
+                            <td class="negative">-33.35%</td>
+                            <td>₩188,595,842,589</td>
                         </tr>
                         <tr class="optimal-row">
                             <td>2</td>
-                            <td class="symbol-cell"><a href="https://www.binance.com/en/futures/TOSHIUSDT" target="_blank" class="symbol-link">TOSHIUSDT</a></td>
-                            <td>0.000291</td>
+                            <td class="symbol-cell"><a href="https://www.binance.com/en/futures/FHEUSDT" target="_blank" class="symbol-link">FHEUSDT</a></td>
+                            <td>0.035560</td>
                             <td class="negative">하락</td>
-                            <td class="negative">-1.64%</td>
-                            <td class="positive">0.03%</td>
-                            <td class="positive">0.52%</td>
-                            <td class="positive">0.24%</td>
-                            <td class="positive">0.28%</td>
-                            <td class="positive">0.34%</td>
-                            <td class="positive">1.42%</td>
-                            <td>₩6,223,629,427</td>
+                            <td class="negative">-4.59%</td>
+                            <td class="negative">-0.90%</td>
+                            <td class="negative">-0.85%</td>
+                            <td class="negative">-0.70%</td>
+                            <td class="negative">-0.28%</td>
+                            <td class="negative">-0.20%</td>
+                            <td class="negative">-2.93%</td>
+                            <td>₩19,018,837,352</td>
                         </tr>
                         <tr class="optimal-row">
                             <td>3</td>
-                            <td class="symbol-cell"><a href="https://www.binance.com/en/futures/ZEREBROUSDT" target="_blank" class="symbol-link">ZEREBROUSDT</a></td>
-                            <td>0.025760</td>
+                            <td class="symbol-cell"><a href="https://www.binance.com/en/futures/EVAAUSDT" target="_blank" class="symbol-link">EVAAUSDT</a></td>
+                            <td>0.866800</td>
                             <td class="negative">하락</td>
-                            <td class="negative">-0.39%</td>
-                            <td class="positive">0.12%</td>
-                            <td class="positive">0.43%</td>
-                            <td class="positive">0.16%</td>
-                            <td class="positive">0.39%</td>
-                            <td class="positive">0.08%</td>
-                            <td class="positive">1.17%</td>
-                            <td>₩2,905,019,549</td>
+                            <td class="negative">-3.87%</td>
+                            <td class="negative">-0.02%</td>
+                            <td class="negative">-1.32%</td>
+                            <td class="negative">-0.06%</td>
+                            <td class="negative">-0.58%</td>
+                            <td class="negative">-0.01%</td>
+                            <td class="negative">-2.00%</td>
+                            <td>₩30,406,663,104</td>
+                        </tr>
+                        <tr class="optimal-row">
+                            <td>4</td>
+                            <td class="symbol-cell"><a href="https://www.binance.com/en/futures/ZBTUSDT" target="_blank" class="symbol-link">ZBTUSDT</a></td>
+                            <td>0.161700</td>
+                            <td class="negative">하락</td>
+                            <td class="negative">-0.58%</td>
+                            <td class="negative">-2.57%</td>
+                            <td class="negative">-0.36%</td>
+                            <td class="negative">-0.54%</td>
+                            <td class="negative">-1.39%</td>
+                            <td class="negative">-0.49%</td>
+                            <td class="negative">-5.36%</td>
+                            <td>₩1,663,513,229,117</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
         <div class="table-container">
-            <h2 class="section-title">📊 일반 조건: 상승/횡보 중 5연속 양봉 (2개)</h2>
+            <h2 class="section-title">📊 일반 조건: 상승/횡보 중 5연속 음봉 (1개)</h2>
             <div class="table-wrapper">
                 <table>
                     <thead>
@@ -530,31 +544,17 @@
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td class="symbol-cell"><a href="https://www.binance.com/en/futures/POWRUSDT" target="_blank" class="symbol-link">POWRUSDT</a></td>
-                            <td>0.085880</td>
-                            <td class="negative">횡보</td>
-                            <td class="negative">0.00%</td>
-                            <td class="positive">0.47%</td>
-                            <td class="positive">0.96%</td>
-                            <td class="positive">0.29%</td>
-                            <td class="positive">0.56%</td>
-                            <td class="positive">1.30%</td>
-                            <td class="positive">3.57%</td>
-                            <td>₩4,027,401,622</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td class="symbol-cell"><a href="https://www.binance.com/en/futures/TOWNSUSDT" target="_blank" class="symbol-link">TOWNSUSDT</a></td>
-                            <td>0.006422</td>
+                            <td class="symbol-cell"><a href="https://www.binance.com/en/futures/BTCDOMUSDT" target="_blank" class="symbol-link">BTCDOMUSDT</a></td>
+                            <td>4635.100000</td>
                             <td class="positive">상승</td>
-                            <td class="positive">0.89%</td>
-                            <td class="positive">0.21%</td>
-                            <td class="positive">0.22%</td>
-                            <td class="positive">0.16%</td>
-                            <td class="positive">0.30%</td>
-                            <td class="positive">0.78%</td>
-                            <td class="positive">1.67%</td>
-                            <td>₩13,414,161,002</td>
+                            <td class="positive">0.01%</td>
+                            <td class="negative">-0.11%</td>
+                            <td class="negative">-0.11%</td>
+                            <td class="negative">-0.04%</td>
+                            <td class="negative">-0.13%</td>
+                            <td class="negative">-0.01%</td>
+                            <td class="negative">-0.39%</td>
+                            <td>₩5,008,307,385</td>
                         </tr>
                     </tbody>
                 </table>
@@ -566,8 +566,8 @@
                 <p>본 분석은 참고용이며, 실제 투자 시에는 추가적인 기술적 분석, 펀더멘털 분석, 리스크 관리가 필요합니다.</p>
                 <p>패턴 분석만으로는 완전한 투자 판단을 할 수 없으며, 개별 종목의 뉴스 및 차트를 반드시 확인하시기 바랍니다.</p>
             </div>
-            <p>생성 시간: 2025-12-30 12:26:34<br>분석 대상: 바이낸스 USDT 선물<br>데이터: 15분봉 12개 (7개 추세 + 5개 패턴)</p>
-            <p>전체: 5개 | ⭐최적: 3개 | 일반: 2개</p>
+            <p>생성 시간: 2025-12-30 13:03:01<br>분석 대상: 바이낸스 USDT 선물<br>데이터: 15분봉 12개 (7개 추세 + 5개 패턴)</p>
+            <p>전체: 5개 | ⭐최적: 4개 | 일반: 1개</p>
         </div>
     </div>
 
